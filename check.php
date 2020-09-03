@@ -26,3 +26,5 @@ else
     print "Включите куки";
 }
 ?>
+
+<div class="close"><a href="logout.php">Выйти</a></div>

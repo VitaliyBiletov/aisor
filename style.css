@@ -65,4 +65,19 @@ body{
 
 .box input[type="submit"]:hover{
 	background: #2ecc71;
-}	
+}
+
+.box a{
+	text-decoration: none;
+	color: gray;
+	font-size: 14px;
+}
+
+.box a:hover{
+	color:white;
+	transition: 0.25s;
+}
+
+.box a:visited{
+	text-decoration: none;
+}
