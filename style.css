@@ -23,7 +23,7 @@ body{
 	font-weight: 500;
 }
 
-.box input[type="text"], .box input[type="password"]{
+.box input[type="text"], .box input[type="password"], .box input[type="email"]{
 	border: 0;
 	background: #353b48;
 	display: block;
@@ -38,13 +38,13 @@ body{
 	transition: 0.25s;
 }
 
-.box input[type="text"]:focus,.box input[type="password"]:focus{
+.box input[type="text"]:focus,.box input[type="password"]:focus, .box input[type="email"]:focus{
 	width: 250px;	
 	border-color: #2ecc71;
 	background: #3f4655;
 }
 
-.box input[type="text"]:focus::placeholder, .box input[type="password"]:focus::placeholder{
+.box input[type="text"]:focus::placeholder, .box input[type="password"]:focus::placeholder, .box input[type="email"]:focus::placeholder{
 	color:#3f4655;
 }	
 
@@ -80,4 +80,10 @@ body{
 
 .box a:visited{
 	text-decoration: none;
+}
+
+.error {
+	color: red;
+	margin-top: 20px;
+	transition: margin-top 2s;
 }

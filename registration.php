@@ -69,3 +69,4 @@ if(isset($_POST['submit']))
 </form>
 </body>
 <link rel="stylesheet" href="style.css">
+</html>

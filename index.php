@@ -47,6 +47,8 @@ if(isset($_POST['submit']))
     else
     {
         $error = "Вы ввели неправильный логин/пароль";
+
+
     }
 }
 ?>
@@ -75,7 +77,20 @@ if(isset($_POST['submit']))
 <?php
 if ($error) {
     ?>
-    <script type="text/javascript">alert('<?echo $error?>')</script><?
+    <script type="text/javascript">
+        const box = document.querySelector('.box');
+        const divError = document.createElement('div');
+        divError.textContent = 'Неправльный логин или пароль!';
+        divError.classList.add('error');
+        box.append(divError);
+        setTimeout(() => {
+            divError.remove();
+            const script = document.querySelector('script');
+            script.parentNode.removeChild(script);
+        }, 5000);
+
+    </script><?
+    unset($_POST);
 }
 ?>
 
