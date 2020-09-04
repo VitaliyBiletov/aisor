@@ -61,6 +61,10 @@ if(isset($_POST['submit']))
 		<h1>Aisor v.1.0</h1>
 		<input type="text" name="login" placeholder="Логин">
 		<input type="password" name="password" placeholder="Пароль">
+        <input type="text" name="firstName" placeholder="Имя">
+        <input type="text" name="lastName" placeholder="Фамилия">
+        <input type="text" name="patronymic" placeholder="Отчество">
+        <input type="email" name="email" placeholder="Адрес электронной почты">
 		<input type="submit" name="submit" value="Зарегистрировать">
 </form>
 </body>
